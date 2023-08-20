@@ -1,24 +1,34 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-@keyframes logo-spin {
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -27,16 +37,70 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+p {
+  color: rgb(78, 78, 78);
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 50px;
+  margin-top: 10px;
 }
 
+Link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li:hover {
+  border-bottom: 2px solid rgb(14, 158, 14);
+}
+
+li:checked {
+  border-bottom: 2px solid rgb(14, 158, 14);
+  content: "";
+  bottom: 0;
+}
+
+.col {
+  margin-bottom: 40px;
+}
+
+.card-title,
+.card-text {
+  text-align: left;
+}
+
+.card-title {
+  font-size: larger;
+}
+.card-text {
+  font-size: large;
+  font-weight: 400;
+  color: rgb(126, 125, 125);
+}
 .card {
-  padding: 2em;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  border: 0 solid #818a91;
+  max-width: 353px;
+  min-width: 353px;
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+.read {
+  text-align: left;
+  color: rgb(14, 146, 14);
+  font-size: medium;
+}
+
+.card-img-top {
+  min-height: 193.25px;
+  max-height: 193.25px;
+}
+
+.container {
+  width: 95%;
 }
