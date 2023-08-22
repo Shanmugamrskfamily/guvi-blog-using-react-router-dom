@@ -1,10 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import YellowBlueIllustrationBusinessBlogBanner from '../assets/Images/CyberSecurity/YellowBlueIllustrationBusinessBlogBanner.png';
+import cybersecuity from '../assets/Images/CyberSecurity/cybersecuity.gif';
+import BluePurple from '../assets/Images/CyberSecurity/BluePurple.webp';
+import TealIllustration from '../assets/Images/CyberSecurity/TealIllustration.webp';
+import coding from '../assets/Images/CyberSecurity/coding.webp';
+import TypesofCyberSecurity from '../assets/Images/CyberSecurity/TypesofCyberSecurity.jpg';
 
 const cardData = [
   {
     title: "Cybersecurity Vs Ethical Hacking: Top 10 Differences",
-    image: "https://www.guvi.in/blog/wp-content/uploads/2022/12/Yellow-Blue-Illustration-Business-Blog-Banner-1536x864.png",
+    image: YellowBlueIllustrationBusinessBlogBanner,
     link: "https://www.guvi.in/blog/difference-between-cybersecurity-and-ethical-hacking/",
     description: "Cybersecurity & Ethical hacking and have been key in making sure that your data online",
     date: "27 December 2022",
@@ -12,7 +18,7 @@ const cardData = [
   },
   {
     title: "What is Cybersecurity? Importance and its uses & the growing challenges in 2023!",
-    image: "https://www.guvi.in/blog/wp-content/uploads/2022/12/cybersecuity-.gif",
+    image: cybersecuity,
     link: "https://www.guvi.in/blog/what-is-cybersecurity/",
     description: "Look around today, you will witness that we are more reliant on technology and devices",
     date: "20 December 2022",
@@ -20,7 +26,7 @@ const cardData = [
   },
   {
     title: "Top 10 Ethical Hacking Books for Beginner to Advanced",
-    image: "https://www.guvi.in/blog/wp-content/uploads/2022/11/Blue-Purple-Futuristic-Virus-Hacks-Youtube-Thumbnail.png",
+    image: BluePurple,
     link: "https://www.guvi.in/blog/best-ethical-hacking-books/",
     description: "Did you know that according to the University of Maryland hackers attack every 39 seconds",
     date: "21 November 2022",
@@ -28,7 +34,7 @@ const cardData = [
   },
   {
     title: "8 Different Types of Cybersecurity and Threats Involved",
-    image: "https://www.guvi.in/blog/wp-content/uploads/2022/11/Teal-Illustration-Digital-Business-Blog-Banner-1.png",
+    image: TealIllustration,
     link: "https://www.guvi.in/blog/types-of-cybersecurity/",
     description: "Cybersecurity refers to the protection of devices, processes, infrastructure, and assets of the organization from",
     date: "9 November 2022",
@@ -36,7 +42,7 @@ const cardData = [
   },
   {
     title: "Is coding required for cybersecurity? If yes, how crucial is coding for cybersecurity?",
-    image: "https://www.guvi.in/blog/wp-content/uploads/2022/06/8bfd01c18be1b5059bc0d7770d9dabf1.gif",
+    image: coding,
     link: "https://www.guvi.in/blog/coding-for-cybersecurity/",
     description: "Many people ask how important is coding for cybersecurity, and the lawyerly answer is: Well,",
     date: "22 June 2022",
@@ -44,7 +50,7 @@ const cardData = [
   },
   {
     title: "Top 7 Cyber Security Attacks in Real Life",
-    image: "https://www.guvi.in/blog/wp-content/uploads/2022/06/Types-of-Cyber-Security-Attacks-and-How-to-Minimize-the-Impact.jpg",
+    image: TypesofCyberSecurity,
     link: "https://www.guvi.in/blog/cyber-security-attacks-in-real-life/",
     description: "Cyber security attacks are the type of actions that are designed to destroy, steal, modify,",
     date: "10 June 2022",

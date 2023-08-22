@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import {Routes, Route, Link } from 'react-router-dom';
 import '../src/App.css';
 import Home from './Pages/Home';
 import Datascience from './Pages/DataScience';
@@ -11,9 +11,9 @@ import Header from './Components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
+     <div className="App">
+      <Navbar/>
+      <Header/>
       <nav className="navbar navbar-expand">
         <div className="container-fluid">
           <button

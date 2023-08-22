@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Navbar.css'
+import GuviBlogLogo from '../assets/GuviBlogLogo.png'
 
 export default function Navbar() {
 
     return (
   <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-  <img width="121" height="53" src="https://www.guvi.in/blog/wp-content/uploads/2022/04/Guvi-blog-logo.png" class="attachment-full size-full wp-image-9465" alt="Guvi-blog-logo"/>
+  <img width="121" height="53" src={GuviBlogLogo} alt="Guvi-blog-logo"/>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
