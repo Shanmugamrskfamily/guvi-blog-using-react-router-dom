@@ -3,4 +3,12 @@
   width: 1280px;
   height: 236px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  display: block; /* Set the default display to block */
+}
+
+/* Use media query to hide the image when screen width is below 768px */
+@media screen and (max-width: 767px) {
+  .pic {
+    display: none;
+  }
 }

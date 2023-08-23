@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Routes, Route, Link } from 'react-router-dom';
 import '../src/App.css';
 import Home from './Pages/Home';
@@ -10,53 +10,60 @@ import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 
 function App() {
+  const [navbarExpanded, setNavbarExpanded] = useState(false);
+
+  const handleNavbarToggle = () => {
+    setNavbarExpanded(!navbarExpanded);
+  };
+
   return (
      <div className="App">
       <Navbar/>
       <Header/>
-      <nav className="navbar navbar-expand">
-        <div className="container-fluid">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav justify-content-center links-style">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
-                  <p className='w-100 text-align-center'>ALL</p>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/full-stack-development">
-                  <p className='w-100 text-align-center'>FULL STACK DEVELOPMENT</p>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/data-science">
-                  <p className='w-100 text-align-center'>DATA SCIENCE</p>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/cyber-security">
-                  <p className='w-100 text-align-center'>CYBER SECURITY</p>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/career">
-                  <p className='w-100 text-align-center'>CAREER</p>
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <Link className="navbar-brand" to="/">
+          {navbarExpanded ? 'Blog Category' : null}
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={handleNavbarToggle}
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${navbarExpanded ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                ALL
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/full-stack-development">
+                FULL STACK DEVELOPMENT
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/data-science">
+                DATA SCIENCE
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/cyber-security">
+                CYBER SECURITY
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/career">
+                CAREER
+              </Link>
+            </li>
+          </ul>
         </div>
       </nav>
       <hr />
