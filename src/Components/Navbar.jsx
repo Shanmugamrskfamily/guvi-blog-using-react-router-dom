@@ -6,14 +6,14 @@ import GuviBlogLogo from '../assets/GuviBlogLogo.png'
 export default function Navbar() {
 
     return (
-  <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <nav className="navbar text-center navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
   <img width="121" height="53" src={GuviBlogLogo} alt="Guvi-blog-logo"/>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul className="navbar-nav">
+      <ul className="navbar-nav ms-auto justify-content-center">
         <li className="nav-item me-3">
           <Link className="nav-link active" aria-current="page" href="#!">COURSES</Link>
         </li>
